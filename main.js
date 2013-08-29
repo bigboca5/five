@@ -13,6 +13,8 @@ app.get('/', function(req, res) {
   res.send("Hello world!");
 });
 
+routes = require('./routes/recibos')(app);
+
 server.listen(8080, function() {
   console.log("Node server running on 8080 port");
 });
